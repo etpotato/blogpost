@@ -1,0 +1,64 @@
+.review__rating {
+  position: relative;
+  padding: 0;
+  margin-left: -10px;
+  width: 172px;
+  height: 25px;
+}
+
+.review__rating:focus-within {
+  outline: 2px solid $outline;
+  outline-offset: 2px;
+}
+
+.review__star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  border: none;
+  border-radius: 0;
+  background-repeat: repeat-x;
+  background-size: 35px 25px;
+  background-position: center right;
+  appearance: none;
+  cursor: pointer;
+  touch-action: none;
+  outline: none;
+}
+
+.review__star:nth-of-type(1) {
+  width: $star-width;
+  z-index: 4;
+}
+
+.review__star:nth-of-type(2) {
+  width: calc(#{$star-width} * 2);
+  z-index: 3;
+}
+
+.review__star:nth-of-type(3) {
+  width: calc(#{$star-width} * 3);
+  z-index: 2;
+}
+
+.review__star:nth-of-type(4) {
+  width: calc(#{$star-width} * 4);
+  z-index: 1;
+}
+
+.review__star:nth-of-type(5) {
+  width: calc(#{$star-width} * 5);
+  background-image: url("../img/icon-star-empty.svg");
+}
+
+.review__star:checked,
+.review__star:hover {
+  background-image: url("../img/icon-star-full.svg");
+}
+
+.review__star:hover ~ .review__star {
+  background-image: url("../img/icon-star-empty.svg");
+}
