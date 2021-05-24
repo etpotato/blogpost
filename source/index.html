@@ -12,7 +12,7 @@
 <body class="page">
   <header class="page__header"></header>
   <main class="page__main main">
-    <h1 class="main__title visually-hidden">Возможно ли войти в зону комфорта JavaScript</h1>
+    <h1 class="main__title visually-hidden">Как войти в зону комфорта JavaScript</h1>
     <article class="main__article article visually-hidden">
       <h2 class="article__title">Путь проникновения через принцип</h2>
     </article>
@@ -20,112 +20,122 @@
       <h2 class="article__title">Путь проникновения через дела</h2>
     </article>
     <article class="main__acticle article">
-      <h2 class="article__title">Путь JavaScript</h2>
-      <section class="article__content content">
-        <h3 class="content__title visually-hidden">Точка зрения автора</h3>
-        <figure class="content__figure">
-          <img class="content__image" src="img/title-image.jpg" width="738" height="300" alt="Четыре книги по JavaScript">
-          <figcaption class="content__figcaption">Можно выделить три основных направления для&nbsp;прогресса JavaScript</figcaption>
+      <div class="container">
+        <div class="article__title-wrapper">
+          <h2 class="article__title">Путь JavaScript</h2>
+        </div>
+        <figure class="article__figure">
+          <div class="article__image-wrapper article__image-wrapper--no-js">
+            <img class="article__image" src="img/title-image.jpg" width="738" height="300" alt="Четыре книги по JavaScript">
+          </div>
+          <div class="article__figure-scrollbar">
+            <div class="article__figure-scrollthumb"></div>
+          </div>
+          <figcaption class="article__figcaption">Можно выделить три основных направления для&nbsp;прогресса JavaScript</figcaption>
         </figure>
-        <section class="content__narrative">
-          <h4 class="content__narrative-title">Серверный JavaScript</h4>
-          <blockquote class="content__narrative-blockquote">
-            <p class="content__narrative-quote">Разработчики и&nbsp;клиенты часто неправильно понимают, что&nbsp;такое система. Они видят графический интерфейс и&nbsp;думают, что он и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего принципа: ввод/вывод не&nbsp;важен.</p>
-            <cite class="content__narrative-cite">— Р. Мартин</cite>
+        <section class="article__quote-section">
+          <h3 class="article__quote-title">Серверный JavaScript</h3>
+          <blockquote class="article__blockquote">
+            <p class="article__quote-text">Разработчики и&nbsp;клиенты часто неправильно понимают, что&nbsp;такое система. Они видят графический интерфейс и&nbsp;думают, что он и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего принципа: ввод/вывод не&nbsp;важен.</p>
+            <cite class="article__quote-cite">— Р. Мартин</cite>
           </blockquote>
         </section>
-        <aside class="content__add">
-          <div class="content__add-wrapper">
-            <p class="content__add-text">Реклама на
-              <a class="content__add-link" href="https://www.blabla.com/" target="_blank">blabla.com</a>
-            </p>
-            <picture class="content__add-picture">
-              <source
-                media="(min-width: 768px)"
-                type="image/webp"
-                srcset="img/add-image-desktop.webp">
-              <source
-                media="(min-width: 768px)"
-                srcset="img/add-image-desktop.jpg">
-              <source
-                type="image/webp"
-                srcset="img/add-image-mobile.webp">
-              <img class="content__add-image"
-                src="img/add-image-mobile.jpg"
-                width="280"
-                height="200"
-                alt="Стопка книг на столе, рядом лежит открытая книга">
-            </picture>
-          </div>
-        </aside>
-        <section class="content__narrative">
-          <h4 class="content__narrative-title">Заключение</h4>
-          <p class="content__narrative-text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что&nbsp;все эти&nbsp;характерологические черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+      </div>
+      <aside class="article__add">
+        <div class="article__add-wrapper container">
+          <p class="article__add-text">Реклама на
+            <a class="article__add-link" href="https://www.blabla.com/" target="_blank">blabla.com</a>
+          </p>
+          <picture class="article__add-picture">
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              srcset="img/add-image-desktop.webp">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/add-image-desktop.jpg">
+            <source
+              type="image/webp"
+              srcset="img/add-image-mobile.webp">
+            <img class="article__add-image"
+              src="img/add-image-mobile.jpg"
+              width="280"
+              height="200"
+              alt="Стопка книг на столе, рядом лежит открытая книга">
+          </picture>
+        </div>
+      </aside>
+      <div class="container">
+        <section class="article__conclusion-section">
+          <h3 class="article__conclusion-title">Заключение</h3>
+          <p class="article__conclusion-text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что&nbsp;все эти&nbsp;характерологические черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
         </section>
-      </section>
+      </div>
       <section class="article__review review">
-        <h3 class="review__title">Оставить отзыв</h3>
-        <form class="review__form" action="/" method="POST" enctype="application/x-www-form-urlencoded">
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">Оцените статью</legend>
-              <div class="review__rating">
-                <input class="review__star" type="radio" name="review_rating" value="1" aria-label="Ужасно">
-                <input class="review__star" type="radio" name="review_rating" value="2" aria-label="Плохо">
-                <input class="review__star" type="radio" name="review_rating" value="3" aria-label="Удовлетворительно">
-                <input class="review__star" type="radio" name="review_rating" value="4" aria-label="Хорошо" checked>
-                <input class="review__star" type="radio" name="review_rating" value="5" aria-label="Отлично">
+        <div class="container">
+          <h3 class="review__title">Оставить отзыв</h3>
+          <form class="review__form" action="/" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset class="review__fieldset">
+              <legend class="review__legend">Оцените статью</legend>
+                <div class="review__rating">
+                  <input class="review__star" type="radio" name="review_rating" value="1" aria-label="Ужасно">
+                  <input class="review__star" type="radio" name="review_rating" value="2" aria-label="Плохо">
+                  <input class="review__star" type="radio" name="review_rating" value="3" aria-label="Удовлетворительно">
+                  <input class="review__star" type="radio" name="review_rating" value="4" aria-label="Хорошо" checked>
+                  <input class="review__star" type="radio" name="review_rating" value="5" aria-label="Отлично">
+                </div>
+            </fieldset>
+            <fieldset class="review__fieldset">
+              <legend class="review__legend">Добавить комментарий к книге</legend>
+              <div class="review__inputs-wrapper">
+                <label class="review__label">
+                  <input class="review__input" type="text" name="review_name" placeholder="Александр">
+                  <span class="review__label-text">Имя</span>
+                </label>
+                <label class="review__label">
+                  <input class="review__input" type="email" name="review_email" placeholder="E-mail">
+                  <span class="review__label-text" lang="en">E-mail</span>
+                </label>
+                <label class="review__label">
+                  <select class="review__select" name="review_book">
+                    <option class="review__option" value="javascript ninja">JavaScript ниндзя</option>
+                    <option class="review__option" value="pragmatic guide to javascript">Pragmatic Guide to JavaScript</option>
+                    <option class="review__option" value="pro javascript techniques">Pro JavaScript Techniques</option>
+                    <option class="review__option" value="eloquent javascript">Выразительный JavaScript</option>
+                  </select>
+                  <span class="review__label-text">Выберите книгу</span>
+                </label>
+                <label class="review__label">
+                  <textarea class="review__message" name="review_message" placeholder="Ваш отзыв"></textarea>
+                  <span class="review__label-text">Ваш отзыв</span>
+                </label>
               </div>
-          </fieldset>
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">Добавить комментарий к книге</legend>
-            <div class="review__inputs-wrapper">
-              <label class="review__label">
-                <input class="review__input" type="text" name="review_name" placeholder="Александр">
-                <span class="review__label-text">Имя</span>
-              </label>
-              <label class="review__label">
-                <input class="review__input" type="email" name="review_email" placeholder="E-mail">
-                <span class="review__label-text" lang="en">E-mail</span>
-              </label>
-              <label class="review__label">
-                <select class="review__select" name="review_book">
-                  <option class="review__option" value="javascript ninja">JavaScript ниндзя</option>
-                  <option class="review__option" value="pragmatic guide to javascript">Pragmatic Guide to JavaScript</option>
-                  <option class="review__option" value="pro javascript techniques">Pro JavaScript Techniques</option>
-                  <option class="review__option" value="eloquent javascript">Выразительный JavaScript</option>
-                </select>
-                <span class="review__label-text">Выберите книгу</span>
-              </label>
-              <label class="review__label">
-                <textarea class="review__message" name="review_message" placeholder="Ваш отзыв"></textarea>
-                <span class="review__label-text">Ваш отзыв</span>
-              </label>
-            </div>
-          </fieldset>
-          <button class="review__submit" type="submit">Отправить</button>
-        </form>
+            </fieldset>
+            <button class="review__submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
-      <section class="article__similar">
-        <h3 class="article__similar-title">Похожие посты</h3>
+      <section class="article__similar similar container">
+        <h3 class="similar__title">Похожие посты</h3>
         <div class="splide">
           <div class="splide__track">
-            <ul class="article__similar-list splide__list">
-              <li class="article__similar-item splide__slide">
-                <a href="" class="article__similar-link">
-                  <img class="article__similar-image" src="img/similar-1.png" width="280" height="280" alt="Логотип Реакт">
-                  <p class="article__similar-text">События жизненного цикла ReactJS</p>
+            <ul class="similar__list similar__list--no-js splide__list">
+              <li class="similar__item splide__slide">
+                <a class="similar__link" href="#">
+                  <h4 class="similar__text">События жизненного цикла ReactJS</h4>
+                  <img class="similar__image" src="img/similar-1.png" width="280" height="280" alt="Логотип Реакт">
                 </a>
               </li>
-              <li class="article__similar-item splide__slide">
-                <a href="" class="article__similar-link">
-                  <img class="article__similar-image" src="img/similar-2.png" width="280" height="280" alt="Схема четырёхколоночной раскладки страницы">
-                  <p class="article__similar-text">CSS Grids. Полное руководство</p>
+              <li class="similar__item splide__slide">
+                <a class="similar__link" href="#">
+                  <h4 class="similar__text">CSS Grids. Полное руководство</h4>
+                  <img class="similar__image" src="img/similar-2.png" width="280" height="280" alt="Схема четырёхколоночной раскладки страницы">
                 </a>
               </li>
-              <li class="article__similar-item splide__slide">
-                <a href="" class="article__similar-link">
-                  <img class="article__similar-image" src="img/similar-3.png" width="280" height="280" alt="Логотип You don't know JS">
-                  <p class="article__similar-text">Асинхронность в JavaScript</p>
+              <li class="similar__item splide__slide">
+                <a class="similar__link" href="#">
+                  <h4 class="similar__text">Асинхронность в JavaScript</h4>
+                  <img class="similar__image" src="img/similar-3.png" width="280" height="280" alt="Логотип You don't know JS">
                 </a>
               </li>
             </ul>
@@ -135,5 +145,6 @@
     </article>
   </main>
   <footer class="page__footer footer"></footer>
+  <script src="js/index.bundle.js"></script>
 </body>
 </html>
