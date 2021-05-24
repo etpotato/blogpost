@@ -2,9 +2,8 @@ module.exports = {
   mode: 'development',
   entry: {
     index: [
-      './source/js/carousel.js',
-      './source/js/api.js',
-      './source/js/form.js',
+      './source/js/scroll.js',
+      './source/js/slider.js',
     ],
   },
   devtool: 'source-map',
