@@ -54,7 +54,7 @@
 
     -ms-overflow-style: auto;
     scrollbar-width: thin;
-    scrollbar-color: $accent $background-input;
+    scrollbar-color: $accent $border-input;
 
     &::-webkit-scrollbar {
       display: block;
@@ -63,7 +63,7 @@
 
     &::-webkit-scrollbar-track {
       border-radius: 100em;
-      background: $background-input;
+      background: $border-input;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -82,7 +82,7 @@
   position: relative;
   height: 4px;
   border-radius: 100em;
-  background-color: $background-input;
+  background-color: $border-input;
 }
 
 .article__image-wrapper--no-js ~ .article__figure-scrollbar {
@@ -243,6 +243,10 @@
 
   .article__figcaption {
     margin-bottom: 0;
+  }
+
+  .article__figcaption-mobile-text {
+    display: none;
   }
 
   .article__quote-section {
