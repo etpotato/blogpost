@@ -26,11 +26,6 @@
   height: 25px;
 }
 
-.review__rating-bar:focus-within {
-  outline: 2px solid $outline;
-  outline-offset: 2px;
-}
-
 .review__rating-star {
   position: absolute;
   top: 0;
@@ -126,9 +121,10 @@
   width: 100%;
   border: 1px solid $border-input;
   border-radius: 6px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 15px;
+  color: $text-basic-input;
   text-overflow: ellipsis;
   outline: none;
   appearance: none;
@@ -143,7 +139,7 @@
   top: 18px;
   left: 20px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $text-basic-light3;
@@ -180,23 +176,31 @@
   }
 }
 
-
 .review__comment-label--select {
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 22px;
     width: 6px;
     height: 6px;
-    border-bottom: 1px solid $text-basic-dark2;
-    border-left: 1px solid $text-basic-dark2;
+    border-bottom: 2px solid $text-basic-dark2;
+    border-left: 2px solid $text-basic-dark2;
     transform: translateY(-50%) rotate(-45deg);
   }
 
   .review__comment-input {
     padding: 17px 32px 17px 20px;
+    color: $text-basic-light3;
     background-color: $background-basic;
+  }
+
+  option {
+    color: $text-basic-input;
+
+    &:disabled {
+      color: $text-basic-light3;
+    }
   }
 }
 
@@ -207,7 +211,7 @@
   width: 100%;
   border: none;
   border-radius: 2px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16.1px;
   font-weight: 700;
@@ -217,6 +221,8 @@
   white-space: nowrap;
   background-color: $accent;
   outline-offset: 4px;
+  touch-action: none;
+  cursor: pointer;
 }
 
 .review__submit:focus:not(:focus-visible) {

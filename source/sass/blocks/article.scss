@@ -9,7 +9,7 @@
   margin-bottom: 40px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: 0;
@@ -104,7 +104,7 @@
 .article__figcaption {
   order: -1;
   margin-bottom: 26px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-style: italic;
@@ -126,7 +126,7 @@
   position: relative;
   margin: 0;
   padding: 8px 0 0 53px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-style: italic;
@@ -151,6 +151,10 @@
   margin-bottom: 22px;
 }
 
+.article__quote-nobr {
+  white-space: nowrap;
+}
+
 .article__quote-cite {
   color: $text-basic-light2;
 }
@@ -168,14 +172,14 @@
 .article__add-text {
   margin-top: 0;
   margin-bottom: 14px;
-  font-family: "SegoeUI";
+  font-family: "SegoeUI", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $text-basic-dark2;
 }
 
 .article__add-link {
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   color: $accent-link;
 }
 
@@ -199,7 +203,7 @@
 
 .article__conclusion-text {
   margin: 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -310,4 +314,3 @@
     line-height: 24px;
   }
 }
-

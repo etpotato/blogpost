@@ -3,6 +3,7 @@ module.exports = {
   entry: {
     index: [
       './source/js/scroll.js',
+      './source/js/select.js',
       './source/js/slider.js',
     ],
   },

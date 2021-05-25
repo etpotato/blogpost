@@ -38,7 +38,7 @@
         <section class="article__quote-section">
           <h3 class="article__quote-title">Серверный JavaScript</h3>
           <blockquote class="article__blockquote">
-            <p class="article__quote-text">Разработчики и&nbsp;клиенты часто неправильно понимают, что&nbsp;такое система. Они видят графический интерфейс и думают, что он и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего принципа: ввод/вывод не&nbsp;важен.</p>
+            <p class="article__quote-text">Разработчики и&nbsp;клиенты часто неправильно понимают, что&nbsp;такое система. Они видят графический интерфейс и&nbsp;думают, что он и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего принципа: <span class="article__quote-nobr">ввод/вывод</span> не&nbsp;важен.</p>
             <cite class="article__quote-cite">— Р. Мартин</cite>
           </blockquote>
         </section>
@@ -76,7 +76,7 @@
       <section class="article__review review">
         <div class="container">
           <h3 class="review__title visually-hidden">Оставить отзыв</h3>
-          <form class="review__form" action="/" method="POST" enctype="application/x-www-form-urlencoded">
+          <form class="review__form" action="https://echo.htmlacademy.ru/courses" method="POST" enctype="application/x-www-form-urlencoded">
             <fieldset class="review__rating-fieldset">
               <legend class="review__rating-legend">Оцените статью</legend>
                 <div class="review__rating-bar">
@@ -99,8 +99,8 @@
                   <span class="review__comment-label-text" lang="en">E-mail</span>
                 </label>
                 <label class="review__comment-label review__comment-label--select">
-                  <select class="review__comment-input" name="review_book">
-                    <option class="review__comment-option review__comment-option--default" value="Выберите книгу" selected disabled>Выберите книгу</option>
+                  <select class="review__comment-input" id="review__select" name="review_book" required>
+                    <option class="review__comment-option review__comment-option--default" value="" selected disabled>Выберите книгу</option>
                     <option class="review__comment-option" value="javascript ninja">JavaScript ниндзя</option>
                     <option class="review__comment-option" value="pragmatic guide to javascript">Pragmatic Guide to JavaScript</option>
                     <option class="review__comment-option" value="pro javascript techniques">Pro JavaScript Techniques</option>
@@ -113,7 +113,7 @@
                 </label>
               </div>
             </fieldset>
-            <button class="review__submit" type="sumbit">Отправить</button>
+            <button class="review__submit" type="submit">Отправить</button>
           </form>
         </div>
       </section>
