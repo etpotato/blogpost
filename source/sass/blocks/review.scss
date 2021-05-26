@@ -195,10 +195,10 @@
     background-color: $background-basic;
   }
 
-  option {
+  .review__comment-option {
     color: $text-basic-input;
 
-    &:disabled {
+    &--default {
       color: $text-basic-light3;
     }
   }
